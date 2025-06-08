@@ -6,7 +6,7 @@ A FastAPI-based machine learning web application that predicts California housin
 
 - RESTful API for house price predictions
 - Random Forest model trained on California housing dataset
-- Single and batch prediction endpoints
+- Single prediction endpoints
 - Model information endpoint
 - Health check endpoints
 - Load testing with Locust
