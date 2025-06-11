@@ -1,4 +1,4 @@
-from typing import Any, Dict, List
+from typing import List
 
 from pydantic import BaseModel, Field
 
@@ -18,20 +18,3 @@ class PredictionRequest(BaseModel):
             ]
         }
     }
-
-
-class PredictionResponse(BaseModel):
-    prediction: float = Field(..., description="Predicted house price in dollars")
-    status: str
-    features_used: List[float]
-
-
-class HealthResponse(BaseModel):
-    status: str
-    message: str
-
-
-class ModelInfoResponse(BaseModel):
-    model_type: str
-    dataset: str
-    features: Dict[str, Any]  # Changed from 'any' to 'Any'
